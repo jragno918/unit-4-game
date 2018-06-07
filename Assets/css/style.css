@@ -1,0 +1,8 @@
+#mission{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#thanosScore, #avengerScore, #wins, #losses, #currentScore {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+} 

@@ -1,25 +1,134 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crystal Collector</title>
+    <title>Crystals Collectors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-
-    <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">    
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Acme|Gloria+Hallelujah|Pathway+Gothic+One" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 </head>
 
-<body>
 
 
-<!-- Added link to the jQuery Library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body background="Assets/images/thanos-fist-bg.jpg" id="mission">
 
-<!-- Link to the js file -->
-<script src="game.js"></script>
-    
+    <div class="container" style="float: left;">
+        <div class="row">
+            <!-- Body Layout -->
+            <div class="col-xl-6">
+                <div class="row">
+                    <!-- Instructions-->
+                    <div class="jumbotron col-xl-12 mt-5 text-center" id="mission">
+
+                        <div class="h2">
+                            <strong>Defeat the Mad Titan!</strong>
+                        </div>
+                        <br>
+                        <div> 
+                            <h4><strong>Mission:</strong></h4>
+                            Thanos and the Black Order are scouring the galaxy in search of its most powerful artifacts, the Infinity Stones. If you can outsmart
+                            Thanos by guessing the number he's thinking of you can save the Universe! Good luck Avengers!</div>
+                        <br
+                        />
+                        <div class="h4">
+                            <strong>Instructions:</strong>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Harness the power of the six Infinity Stones. Each stone has a random value assigned to it.
+                                    By clicking on the stones you will add each stones assigned value to your total score.</li>
+                                <li>To defeat Thanos and save the Universe your intellect must match his. You do this by getting
+                                    <strong>MATCHING</strong> his score
+                                    <strong>EXACTLY</strong>.</li>
+                                <li>If your score does not match the Mad Titans you lose.</li>
+                                <li>Keep in mind that should you start the game over the values of the stones will change.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p id="result" class="text-center h3 mt-3"></p>
+                            <p id="results2"></p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="card col-xl-6">
+                        <div class="card-body">
+                            <div class="h4 text-center" id="thanosScore">Thanos</div>
+                            <div class="text-center" id="thanosScore">??</div>
+                        </div>
+                    </div>
+
+                    <div class="card col-xl-6">
+                        <div class="card-body">
+                            <div class="h4 text-center" id="avengerScore">Avengers</div>
+                            <div class="text-center" id="avengerScore">??</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mt-4">
+
+                    <div class="btn-group m-auto">
+                        <div type="button" class="card" id="realityStone">
+                            <div class="card-body text-center">
+                                <img src="assets/images/reality-stone.jpg" width="100" height="100">
+                            </div>
+                        </div>
+
+                        <div type="button" class="card" id="spaceStone">
+                            <div class="card-body text-center">
+                                <img src="Assets/images/space-stone.jpg" width="100" height="100">
+                            </div>
+                        </div>
+                        <div type="button" class="card" id="mindStone">
+                            <div class="card-body text-center">
+                                <img src="assets/images/mind-stone.jpg" width="100" height="100">
+                            </div>
+                        </div>
+                        <div type="button" class="card" id="powerStone">
+                            <div class="card-body text-center">
+                                <img src="assets/images/power-stone.jpg" width="100" height="100">
+                            </div>
+                        </div>
+                        <div type="button" class="card" id="timeStone">
+                            <div class="card-body text-center">
+                                <img src="assets/images/time-stone.jpg" width="100" height="100">
+                            </div>
+                        </div>
+                        <div type="button" class="card" id="soulStone">
+                            <div class="card-body text-center">
+                                <img src="assets/images/soul-stone.jpg" width="100" height="100">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12 card mt-4" id="yourScore" style="float: right;">
+                        <div class="text-center h4" id="avengerScore">YOUR SCORE IS:</div>
+                        <div class="text-center" id="wins">Wins:</div>
+                        <div class="text-center" id="losses">Losses:</div>
+                        <div class="text-center" id="avengerScore"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
