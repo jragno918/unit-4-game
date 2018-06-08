@@ -33,7 +33,7 @@ $(document).ready(function () {
             wins++;
             oldscore = thanosScore;
             youroldscore = avengerScore;
-            $("#result").html('<hr>"YOU HAVE DEFEATED THE MAD TITAN AND SAVED THE UNIVERSE"');
+            $("#result").text('<hr>"YOU HAVE DEFEATED THE MAD TITAN AND SAVED THE UNIVERSE"');
             $("#results2").text("Thanos Score:  " + oldscore + "  Avengers Score: " + youroldscore);
             reset();
 
@@ -41,7 +41,7 @@ $(document).ready(function () {
         else if (avengerScore > thanosScore) { 
             oldscore = thanosScore;
             youroldscore = avengerScore;
-            $("#result").html('<hr>"YOU\'VE BEEN CRUSHED BY THE MAD TITAN"');
+            $("#result").text('<hr>"YOU\'VE BEEN CRUSHED BY THE MAD TITAN"');
             $("#results2").text("Thanos Score:  " + oldscore + "  Avengers Score: " + youroldscore);
             losses++;
             reset();
