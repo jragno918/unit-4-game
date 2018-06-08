@@ -2,13 +2,6 @@ $(document).ready(function () {
 
     var thanosScore = 0; 
     var avengerScore = 0; 
-    //Random values are assigned to the stones
-    // var reality = 0;
-    // var space = 0;
-    // var mind = 0;
-    // var power = 0;
-    // var time = 0;
-    // var soul = 0;
     var wins = 0; 
     var losses = 0;
     var oldscore = 0;
@@ -53,7 +46,7 @@ $(document).ready(function () {
             losses++;
             reset();
         }
-        else if (currentScore > 0){
+        else if (avengerScore > 0){
             $("#result").text("");
             $("#results2").text("");
             $("#yourScore").show();
@@ -66,32 +59,32 @@ $(document).ready(function () {
     //On click events asigned to each crystal.
 
     $("#realityStone").on('click', function () {
-        avengerScore += crystals[0];
+        avengerScore += stones[0];
         playGame();
     });
 
     $("#spaceStone").on('click', function () {
-        avengerScore += crystals[1];
+        avengerScore += stones[1];
         playGame();
     });
 
     $("#mindStone").on('click', function () {
-        avengerScore += crystals[2];
+        avengerScore += stones[2];
         playGame();
     });
 
     $("#powerStone").on('click', function () {
-        avengerScore += crystals[3];
+        avengerScore += stones[3];
         playGame();
     });
     
     $("#timeStone").on('click', function () {
-        avengerScore += crystals[4];
+        avengerScore += stones[4];
         playGame();
     });
 
     $("#soulStone").on('click', function () {
-        avengerScore += crystals[5];
+        avengerScore += stones[5];
         playGame();
     });
 

@@ -1,8 +1,18 @@
+body {
+    background-image: url("Assets/images/thanos-fist-bg.jpg");
+    background-repeat: no-repeat;
+}
+
+#header {
+    background-color: transparent;
+    color: purple;
+}
+
 #mission{
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-#thanosScore, #avengerScore, #wins, #losses, #currentScore {
+#thanosScore, #avengerScore, #wins, #losses, #currentScore, #targetScore {
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 30px;
 } 
